@@ -70,6 +70,10 @@ img {
   display: block;
 }
 
+.title_description {
+  color: var(--first-color);
+}
+
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
