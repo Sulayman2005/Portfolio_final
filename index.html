@@ -1,239 +1,352 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--   Infos site   -->
-        <title>Portfolio website complete</title>
-        <meta name="description" content="Sulayman, développeur web après une formation de 9 mois au sein d'une formation openclassrooms à acquéris des compétences en htlm,css,scss,javascript,react,redux ">
-        <meta name="keywords" content="portfolio, présentation, formation, web">
-        <link rel="icon" href="./assets/images/favicon.ico">
-        <!-- css -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sulayman Canteau | Portfolio Concepteur Designer UI</title>
+    <meta name="description" content="Portfolio de Sulayman Canteau, futur Concepteur Designer UI en alternance. Profil hybride entre design d'interfaces, UX/UI, intégration web et développement front-end.">
+    <meta name="keywords" content="portfolio, concepteur designer UI, UI design, UX design, alternance, webdesign, développement front-end, HTML, CSS, JavaScript, React, WordPress, Webflow, Figma">
+    <meta name="author" content="Sulayman Canteau">
+    <link rel="icon" href="./assets/images/favicon.ico">
 
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Sulayman</a>
-                </div>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Accueil</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projets</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Bonjour,<br> <span class="home__title-color">Sulayman</span><br>Développeur web</h1>
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/sulayman-canteau-458716370/" class="home__social-icon" alt="icon linkedin" loading="lazy"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/Sulayman2005?tab=repositories" class="home__social-icon" alt="icon github" loading="lazy"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/Sulayman_preview.webp" alt="image de sulayman l'auteur de ce portfolio" />
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-
-            <section class="about section " id="about">
-                <h2 class="section-title">A propos</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/picture_dev_preview.webp" alt="image montrant une caricature du développement web">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Sulayman</h2>
-                        <p class="about__text">J’ai suivi une formation de développeur web d’une durée de 9 mois, durant laquelle j’ai acquis les bases du développement web, notamment côté front-end. En complément, j’ai développé des compétences en no-code, en utilisant des outils comme WordPress et Webflow pour améliorer le design et l’ergonomie des interfaces.<br />
-                            <br />En dehors de ma formation, j’ai également pris l’initiative d’effectuer plusieurs stages dans le domaine du web, ce qui m’a permis de renforcer mes compétences sur le terrain et de mieux comprendre les attentes du milieu professionnel.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Compétences</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Projet professionelle</h2>
-                        <p class="skills__text">J'ai pu conquérir des compétences côté Front-end notamment Html,CSS, JAVASCRIPT et React</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">React</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.webp" alt="image d'une personne tapant sur son clavier" class="skills__img" loading="lazy">
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="work section" id="work">
-                <h2 class="section-title">Projets professionnels</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__item">
-                        <a href="https://github.com/Sulayman2005/Canteau_Sulayman_P4_ohmyfood" class="work__img" alt="Projet Ohmyfood">
-                            <img src="assets/img/Ohmyfood_preview.webp" alt="projet ohmyfood" loading="lazy">
-                        </a>
-                        <p>Création d’un site mobile-first de menus interactifs pour des restaurants à Paris. Intégration HTML/CSS poussée avec animations.</p>
-                        <p><em>Stack :</em> HTML, SASS, CSS3</p>
-                    </div>
-
-                    <div class="work__item">
-                        <a href="https://github.com/Sulayman2005/Page_web_dynamique_javascript" class="work__img" alt="Page web dynamique javascript">
-                            <img src="assets/img/capture_sophiebluel.webp" alt="projet sophie bluel" loading="lazy">
-                        </a>
-                        <p>Développement d'une page web dynamique avec JavaScript vanilla. Intégration d’un système de filtres interactifs pour une galerie.</p>
-                        <p><em>Stack :</em> HTML, CSS, JavaScript</p>
-                    </div>
-
-                    <div class="work__item">
-                        <a href="https://github.com/Sulayman2005/Application-web-React" class="work__img" alt="Application web react">
-                            <img src="assets/img/capture_kasa.webp" alt="projet kasa" loading="lazy">
-                        </a>
-                        <p>Création d’une application web React affichant des logements. Utilisation de React Router et composants dynamiques.</p>
-                        <p><em>Stack :</em> React, JavaScript, CSS</p>
-                    </div>
-
-                    <div class="work__item">
-                        <a href="https://github.com/Sulayman2005/Projet-nina-carducci" class="work__img" alt="référencement SEO">
-                            <img src="assets/img/capture nina_carducci.webp" alt="projet nina carducci" loading="lazy">
-                        </a>
-                        <p>Optimisation SEO et accessibilité d’un site existant. Travail sur les performances, structure sémantique, et métadonnées.</p>
-                        <p><em>Stack :</em> HTML, CSS, Lighthouse, SEO</p>
-                    </div>
-
-                    <div class="work__item">
-                        <a href="https://github.com/Sulayman2005/debuggez_application" class="work__img" alt="débuggez une application">
-                            <img src="assets/img/Capture 724_events.webp" alt="projet debuggez une application" loading="lazy">
-                        </a>
-                        <p>Débogage et correction d’une application JavaScript existante. Résolution de bugs liés aux formulaires et aux appels API.</p>
-                        <p><em>Stack :</em> JavaScript, Chrome DevTools</p>
-                    </div>
-
-                    <div class="work__item">
-                        <a href="https://github.com/Sulayman2005/Aregnt_Bank" class="work__img" alt="Argent Bank">
-                            <img src="assets/img/Capture argent bank.webp" alt="projet argent bank" loading="lazy">
-                        </a>
-                        <p>Implémentation du front-end d’une application bancaire avec React et Redux. Authentification, gestion de session et données utilisateurs.</p>
-                        <p><em>Stack :</em> React, Redux, JavaScript, API REST</p>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="https://formspree.io/f/xvgrejgp" method="POST" class="contact__form">
-                        <input type="text" name="name" placeholder="Nom" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                        <textarea name="message" placeholder="Votre message..." cols="0" rows="10" class="contact__input" required></textarea>
-                        <input type="submit" value="Envoyer" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-
-        <footer class="footer">
-            <p class="footer__title">Sulayman</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/profile.php?id=61574804383983&locale=fr_FR" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/" class="footer__icon" alt="icon instagram"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://x.com/home?locale=fr" class="footer__icon" alt="icon twitter"><i class='bx bxl-twitter' ></i></a>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav__logo">Sulayman</a>
             </div>
-            <p class="footer__copy">&#169;All rigths reserved</p>
-        </footer>
 
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Accueil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
 
+            <div class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <main class="l-main">
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.min.js"></script>
-    </body>
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Bonjour, je suis <br>
+                    <span class="home__title-color">Sulayman</span><br>
+                    Concepteur <br> Designer UI
+                </h1>
+
+                <a href="#contact" class="button">Me contacter</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/sulayman-canteau-458716370/" class="home__social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/Sulayman2005?tab=repositories" class="home__social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="mailto:canteausulayman@mail.fr" class="home__social-icon" aria-label="Envoyer un email">
+                    <i class='bx bx-envelope'></i>
+                </a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/Sulayman.png" alt="Portrait illustré de Sulayman" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">À propos</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/picture_dev_preview.webp" alt="Illustration autour du développement web et du design d'interfaces">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Sulayman</h2>
+
+                    <p class="about__text">
+                        Passionné par le design d’interfaces et l’expérience utilisateur, je me spécialise aujourd’hui dans la conception d’interfaces modernes, intuitives et centrées utilisateur.
+                    </p>
+
+                    <p class="about__text">
+                        Issu d’une formation en développement web, j’ai acquis de solides bases techniques qui me permettent de concevoir des interfaces à la fois esthétiques, performantes et réalistes à implémenter.
+                    </p>
+
+                    <p class="about__text">
+                        En parallèle, je me forme en autodidacte sur des outils comme <strong>WordPress</strong>, <strong>Webflow</strong> et <strong>Figma</strong> afin de renforcer mes compétences en <strong>UI/UX design</strong>, prototypage, responsive design et création de design systems.
+                    </p>
+
+                    <p class="about__text">
+                        Mon objectif est d’intégrer une alternance en <strong>Conception Design UI</strong> pour développer davantage mes compétences en design d’interfaces, accessibilité, ergonomie et parcours utilisateur.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Compétences</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Compétences UI, UX et développement</h2>
+                    <p class="skills__text">
+                        Mon profil me permet de concevoir des interfaces attractives, fonctionnelles et cohérentes, tout en comprenant les contraintes techniques de leur intégration.
+                    </p>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-layout skills__icon'></i>
+                            <span class="skills__name">UI Design / Design d’interfaces</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-user skills__icon'></i>
+                            <span class="skills__name">UX / Ergonomie / Accessibilité</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML / CSS / SCSS</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JavaScript / React / Vue.js</span>
+                        </div>
+                        <div class="skills__bar skills__ux"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-code-alt skills__icon'></i>
+                            <span class="skills__name">PHP / Symfony / MySQL</span>
+                        </div>
+                        <div class="skills__bar skills__html"></div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-pen skills__icon'></i>
+                            <span class="skills__name">Figma / Webflow / WordPress</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.webp" alt="Personne travaillant sur une interface web" class="skills__img" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="work section" id="work">
+            <h2 class="section-title">Projets</h2>
+
+            <div class="work__container bd-grid">
+
+                <div class="work__item">
+                    <a href="https://github.com/Sulayman2005/Canteau_Sulayman_P4_ohmyfood" class="work__img" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Ohmyfood sur GitHub">
+                        <img src="assets/img/Ohmyfood_preview.webp" alt="Aperçu du projet Ohmyfood" loading="lazy">
+                    </a>
+                    <h3 class="work__title">Ohmyfood</h3>
+                    <p>
+                        Création d’un site mobile-first de menus interactifs pour des restaurants. 
+                        Ce projet m’a permis de travailler l’intégration front-end, les animations CSS, 
+                        la hiérarchie visuelle et la conception d’une interface responsive.
+                    </p>
+                    <p><strong>Compétences mises en avant :</strong> intégration web, responsive design, animation UI, organisation visuelle.</p>
+                    <p><strong>Stack :</strong> HTML, SCSS, CSS3</p>
+                </div>
+
+                <div class="work__item">
+                    <a href="https://github.com/Sulayman2005/Page_web_dynamique_javascript" class="work__img" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Sophie Bluel sur GitHub">
+                        <img src="assets/img/capture_sophiebluel.webp" alt="Aperçu du projet Sophie Bluel" loading="lazy">
+                    </a>
+                    <h3 class="work__title">Page web dynamique – Sophie Bluel</h3>
+                    <p>
+                        Développement d’une page web dynamique en JavaScript avec système de filtres interactifs et gestion d’éléments dynamiques.
+                        Ce projet m’a permis d’améliorer la fluidité de l’expérience utilisateur et l’interaction avec l’interface.
+                    </p>
+                    <p><strong>Compétences mises en avant :</strong> logique front-end, interaction utilisateur, manipulation du DOM, UX dynamique.</p>
+                    <p><strong>Stack :</strong> HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="work__item">
+                    <a href="https://github.com/Sulayman2005/Application-web-React" class="work__img" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Kasa sur GitHub">
+                        <img src="assets/img/capture_kasa.webp" alt="Aperçu du projet Kasa" loading="lazy">
+                    </a>
+                    <h3 class="work__title">Application immobilière – Kasa</h3>
+                    <p>
+                        Création d’une application React présentant des logements à travers une interface claire et moderne.
+                        J’y ai travaillé la structuration des composants, la navigation, la lisibilité de l’information et l’adaptation responsive.
+                    </p>
+                    <p><strong>Compétences mises en avant :</strong> composants UI, architecture front-end, responsive design, expérience utilisateur.</p>
+                    <p><strong>Stack :</strong> React, JavaScript, CSS</p>
+                </div>
+
+                <div class="work__item">
+                    <a href="https://github.com/Sulayman2005/Projet-nina-carducci" class="work__img" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Nina Carducci sur GitHub">
+                        <img src="assets/img/capture nina_carducci.webp" alt="Aperçu du projet Nina Carducci" loading="lazy">
+                    </a>
+                    <h3 class="work__title">Optimisation SEO & performance – Nina Carducci</h3>
+                    <p>
+                        Audit et optimisation d’un site existant afin d’améliorer son référencement naturel, ses performances et son accessibilité.
+                        Ce projet m’a sensibilisé à l’importance de la qualité technique dans l’expérience utilisateur.
+                    </p>
+                    <p><strong>Compétences mises en avant :</strong> accessibilité, SEO, performance web, structure sémantique, amélioration UX.</p>
+                    <p><strong>Stack :</strong> HTML, CSS, JavaScript, Lighthouse, SEO</p>
+                </div>
+
+                <div class="work__item">
+                    <a href="https://github.com/Sulayman2005/debuggez_application" class="work__img" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet de débogage sur GitHub">
+                        <img src="assets/img/Capture 724_events.webp" alt="Aperçu du projet de débogage 724events" loading="lazy">
+                    </a>
+                    <h3 class="work__title">Débogage d’application web</h3>
+                    <p>
+                        Analyse et correction de bugs sur une application JavaScript existante.
+                        J’ai travaillé sur la fiabilité de l’interface, la résolution de problèmes et l’amélioration du fonctionnement global du produit.
+                    </p>
+                    <p><strong>Compétences mises en avant :</strong> debugging, qualité front-end, logique JavaScript, stabilité de l’interface.</p>
+                    <p><strong>Stack :</strong> JavaScript, Chrome DevTools</p>
+                </div>
+
+                <div class="work__item">
+                    <a href="https://github.com/Sulayman2005/Aregnt_Bank" class="work__img" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Argent Bank sur GitHub">
+                        <img src="assets/img/Capture argent bank.webp" alt="Aperçu du projet Argent Bank" loading="lazy">
+                    </a>
+                    <h3 class="work__title">Argent Bank</h3>
+                    <p>
+                        Développement du front-end d’une application bancaire avec authentification et gestion de session.
+                        Ce projet m’a permis de renforcer ma capacité à concevoir une interface claire, sécurisée et structurée.
+                    </p>
+                    <p><strong>Compétences mises en avant :</strong> interface utilisateur, architecture front-end, gestion d’état, API REST.</p>
+                    <p><strong>Stack :</strong> React, Redux, JavaScript, API REST</p>
+                </div>
+
+                <div class="work__item">
+                    <a href="https://github.com/Sulayman2005/Mini-Twitter" class="work__img" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Mini Twitter sur GitHub">
+                        <img src="assets/img/capture_kasa.webp" alt="Aperçu générique d'un projet réseau social" loading="lazy">
+                    </a>
+                    <h3 class="work__title">Mini réseau social</h3>
+                    <p>
+                        Développement d’une application type réseau social avec système d’inscription, connexion, publication de messages et interactions utilisateurs.
+                        Ce projet met en avant ma compréhension des parcours utilisateur et des fonctionnalités interactives.
+                    </p>
+                    <p><strong>Compétences mises en avant :</strong> logique applicative, parcours utilisateur, gestion des interactions, UI fonctionnelle.</p>
+                    <p><strong>Stack :</strong> PHP, MySQL, HTML, CSS</p>
+                </div>
+
+                <div class="work__item">
+                    <a href="https://github.com/Sulayman2005/Netflux" class="work__img" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Netflux sur GitHub">
+                        <img src="assets/img/work1.jpg" alt="Aperçu générique d'une plateforme de streaming" loading="lazy">
+                    </a>
+                    <h3 class="work__title">Plateforme de streaming – Netflux</h3>
+                    <p>
+                        Conception d’une plateforme de streaming avec affichage dynamique des contenus, gestion des favoris et séparation front-end / back-end.
+                        J’y ai travaillé la présentation visuelle, l’organisation des contenus et l’expérience utilisateur.
+                    </p>
+                    <p><strong>Compétences mises en avant :</strong> hiérarchie visuelle, interface riche, logique full-stack, UX orientée contenu.</p>
+                    <p><strong>Stack :</strong> Symfony, Vue.js, API REST, MySQL</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <p class="contact__text">
+                        Je recherche actuellement une <strong>alternance en Conception Design UI</strong>.
+                        N’hésitez pas à me contacter pour échanger sur une opportunité, un projet ou une collaboration.
+                    </p>
+
+                    <p class="contact__text"><strong>Email :</strong> canteausulayman@mail.fr</p>
+                    <p class="contact__text"><strong>Téléphone :</strong> 07 43 10 50 85</p>
+                    <p class="contact__text"><strong>Localisation :</strong> France</p>
+                </div>
+
+                <form action="https://formspree.io/f/xvgrejgp" method="POST" class="contact__form">
+                    <input type="text" name="name" placeholder="Nom" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                    <textarea name="message" placeholder="Votre message..." cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="submit" value="Envoyer" class="contact__button button">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">Sulayman</p>
+
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/sulayman-canteau-458716370/" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://github.com/Sulayman2005" class="footer__icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="mailto:canteausulayman@mail.fr" class="footer__icon" aria-label="Email">
+                <i class='bx bx-envelope'></i>
+            </a>
+        </div>
+
+        <p class="footer__copy">&#169; Sulayman Canteau - Tous droits réservés</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.min.js"></script>
+</body>
 </html>
